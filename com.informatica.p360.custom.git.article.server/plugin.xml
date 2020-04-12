@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.heiler.ppm.communication.core.requestHandlers">
+      <requestHandler
+            class="com.informatica.p360.custom.git.article.server.ItemNoHandler"
+            name="ItemNoHandler"
+            singleton="true"
+            typeSelector="com.heiler.ppm.p360.customization.article.server.ItemNoHandler">
+      </requestHandler>
+   </extension>
+   <extension
+         point="com.heiler.ppm.importer5.core.postImportStep">
+      <postImportStep
+            class="com.informatica.p360.custom.git.article.server.ArticlePostImportStep"
+            name="ArticlePostImportStep">
+      </postImportStep>
+   </extension>
+
+</plugin>
