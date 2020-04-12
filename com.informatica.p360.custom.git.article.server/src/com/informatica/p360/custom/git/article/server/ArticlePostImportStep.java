@@ -100,6 +100,7 @@ public class ArticlePostImportStep implements PostImportStep
                 //generate the item idenitifer and set it in the item no field
                 dataObject.set( "identifier", generateItemIdentifier( cat_identifier ) );
                 detailModel.save( null );
+                System.out.println("This should be checked in GitHub");
               }
               catch ( CoreException e )
               {
